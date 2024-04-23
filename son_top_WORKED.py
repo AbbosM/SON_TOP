@@ -13,10 +13,6 @@ while True:
                 print("Xato, men o'ylagan son bundan kattaroq. Yana harakat qiling:\n")
                 y = eval(input(":"))
                 t+=1
-            # elif y != int:
-            #     print("Siz noto'g'ri belgi bosdingiz. Yana harakat qiling:\n")
-            #     y = eval(input(":"))
-            #     t+=1
         print(f"TOPDINGIZ! {x} sonini o'ylagan edim. {t} ta taxmin bilan topdingiz. Tabriklayman!")
     son = randint(1,10)
     user_num=eval(input("1 dan 10 gacha son o'yladim. Topa olasizmi?: \n"))
