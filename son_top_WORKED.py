@@ -1,4 +1,3 @@
-#import soz_topish as st
 from random import randint, sample
 print("Keling SON TOP o'yini o'ynaymiz!")
 while True:
@@ -21,22 +20,20 @@ while True:
             #     t+=1
         print(f"TOPDINGIZ! {x} sonini o'ylagan edim. {t} ta taxmin bilan topdingiz. Tabriklayman!")
     son = randint(1,10)
-    #print(son)
     user_num=eval(input("1 dan 10 gacha son o'yladim. Topa olasizmi?: \n"))
     son_pc(son, user_num)
     any_key = input(print("1 dan 10 gacha son o'ylang. Men topishga harakat qilaman: \nSon o'ylagan bo'lsangiz istalgan tugmani bosing."))
     def son_user(m, n):#m-> user's number in mind, n-> PC's assumption
         t1=1
         l = [1,2,3,4,5,6,7,8,9,10]
-        #for m in l:
         n = sample(l,1)
-        print(n)
+        #print(n)
         pc_num = n[0]
         user_check = input(print(f"Siz, {pc_num} sonini o'yladingiz: to'g'ri(T), bundan kattaroq (+), yoki kichikroq (-)?\n"))
         while user_check.title() != "T":
             if user_check =="+":
                 del l[:l.index(pc_num+1)]
-                print(l)
+                #print(l)
                 n = sample(l,1)
                 print(n)
                 pc_num = n[0]
@@ -45,12 +42,11 @@ while True:
             elif user_check =="-":
                 del l[l.index(pc_num):]
                 t1+=1
-                print(l)
+                #print(l)
                 n = sample(l,1)
                 print(n)
                 pc_num = n[0]
                 user_check = input(print(f"Siz, {pc_num} sonini o'yladingiz: to'g'ri(T), bundan kattaroq (+), yoki kichikroq (-)?\n"))
-                #elif user_check.title() =="T":
         print(f"Soningizni {t1} ta taxmin bilan topdim!")
         if t == t1:
             print(f"Durrang! Ikkimiz ham {t} ta taxmin bilan topdik" )
@@ -58,11 +54,6 @@ while True:
             print(f"Men yutdim. Men {t1} ta taxmin bilan topdim, siz esa {t} ta taxmin bilan topdingiz!")
         else:
             print(f"Tabriklayman, siz yutdingiz. Men {t1} ta taxmin bilan topdim, siz esa {t} ta taxmin bilan topdingiz!")
-        # yana = eval(input(print("Keling yana bir marta o'ynaylik! ha(1), yo'q(0): ")))
-        # while yana != 0:
-        #     return user_num
-        # else:
-        #     return
     in_mind = []
     pc_assumption = []
     for i in range(1,11):
