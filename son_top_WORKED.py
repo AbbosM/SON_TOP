@@ -2,7 +2,6 @@ from random import randint, sample
 print("Keling SON TOP o'yini o'ynaymiz!")
 while True:
     def son_pc(x, y)->int: # x->random son, y -> user number
-        #for x in range(randint(1,10)):
         global t
         t=1
         while x != y:
